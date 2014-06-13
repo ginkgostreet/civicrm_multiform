@@ -1,5 +1,5 @@
-
-Welcome to the wild wonderful world of CiviCRM Multi-Form.
+Welcome to the wild wonderful world of CiviCRM Multi-Form. *This module is
+presently under development and is not in any kind of a usable state.*
 
 This extension was inspired by the Event component and its single Event Registration form.
 Wouldn't it be nice to allow the user to create multiple forms for a single entity?

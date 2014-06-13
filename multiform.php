@@ -84,3 +84,14 @@ function multiform_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
 function multiform_civicrm_managed(&$entities) {
   return _multiform_civix_civicrm_managed($entities);
 }
+
+/**
+ * Implementation of hook_civicrm_entityTypes
+ */
+function multiform_civicrm_entityTypes(&$entityTypes) {
+  $entityTypes[] = array(
+    'name'  => 'Multiform',
+    'class' => 'CRM_Multiform_DAO_EntityForm',
+    'table' => 'civicrm_entity_form',
+  );
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/Multiform</base>
+  <class>EntityForm</class>
+  <name>civicrm_entity_form</name>
+  <add>4.5</add>
+  <log>true</log>
+  <field>
+    <name>id</name>
+    <uniqueName>entity_form_id</uniqueName>
+    <title>EntityForm ID</title>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Form Id</comment>
+    <add>4.5</add>
+  </field>
+<!--
+ - Parent Entity Type
+ - Parent Entity ID
+ - title
+ - Header
+ - Footer
+ - Options
+-->
+  <field>
+      <name>entity_table</name>
+      <uniqueName>entity_form_entity_table</uniqueName>
+      <title>EntityForm Entity Type</title>
+      <type>varchar</type>
+      <length>64</length>    
+      <comment>The Parent Entity table for entity_id</comment>
+      <add>4.5</add>
+  </field>
+  <field>
+      <name>entity_id</name>
+      <uniqueName>entity_form_parent_entity_id</uniqueName>
+      <title>EntityForm Parent Entity</title>
+      <type>int unsigned</type>
+      <comment>The entity this form belongs to.</comment>
+      <add>4.5</add>
+  </field>
+  <field>
+      <name>title</name>
+      <uniqueName>entity_form_title</uniqueName>
+      <title>Title</title>
+      <type>varchar</type>
+      <length>192</length>
+      <add>4.5</add>
+  </field>
+  <field>
+      <name>Header</name>
+      <uniqueName>entity_form_header</uniqueName>
+      <title>Header</title>
+      <type>text</type>
+      <comment>HTML for display before profiles</comment>
+      <add>4.5</add>
+  </field>
+  <field>
+      <name>footer</name>
+      <unique>entity_form_footer</unique>
+      <title>Footer</title>
+      <type>text</type>
+      <comment>HTML for display after profiles</comment>
+      <add>4.5</add>
+  </field>
+  <field>
+      <name>options</name>
+      <uniqueName>entity_form_options</uniqueName>
+      <title>Serialized Options</title>
+      <type>text</type>
+      <comment>Serialized PHP for non-generic settings</comment>
+      <add>4.5</add>
+  </field>
+  <primaryKey>
+     <name>id</name>
+     <autoincrement>true</autoincrement>
+  </primaryKey>
+</table>

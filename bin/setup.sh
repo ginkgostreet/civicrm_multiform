@@ -27,11 +27,12 @@ echo "</database>" >> "${CIVIROOT}/xml/schema/Schema.xml"
 if [ ! -e "${CIVIROOT}/xml/schema/${EXTNAME}" ] ; then
   ln -s ${EXTROOT}/xml/schema/${EXTNAME} ${CIVIROOT}/xml/schema/${EXTNAME}
 fi
+
 cd ${CIVIROOT}/xml
 php GenCode.php
 # (There may be extra arguments to pass into GenCode.php; not sure)
 
-cp -f ${CIVIROOT}/CRM/${EXTNAME}/DAO/* ${VOLROOT}/CRM/${EXTNAME}/DAO/
+cp -f ${CIVIROOT}/CRM/${EXTNAME}/DAO/* ${EXTROOT}/CRM/${EXTNAME}/DAO/
 mv ${CIVIROOT}/xml/schema/Schema.xml.backup ${CIVIROOT}/xml/schema/Schema.xml
 
 unlink ${CIVIROOT}/xml/schema/${EXTNAME}

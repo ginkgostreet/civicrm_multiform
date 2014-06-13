@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<extension key="com.ginkgostreet.multiform" type="module">
+  <file>multiform</file>
+  <name>Multi-Form</name>
+  <description>Allows for user-creation of multiple forms associated with an entity. Initial version not intended to have any user interface.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Ginkgo Street Labs</author>
+    <email>inquire@ginkgostreet.com</email>
+  </maintainer>
+  <releaseDate>2014-06-13</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.5</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <civix>
+    <namespace>CRM/Multiform</namespace>
+  </civix>
+</extension>

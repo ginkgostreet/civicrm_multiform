@@ -90,7 +90,7 @@ function multiform_civicrm_managed(&$entities) {
  */
 function multiform_civicrm_entityTypes(&$entityTypes) {
   $entityTypes[] = array(
-    'name'  => 'Multiform',
+    'name'  => 'EntityForm',
     'class' => 'CRM_Multiform_DAO_EntityForm',
     'table' => 'civicrm_entity_form',
   );

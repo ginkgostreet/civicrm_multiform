@@ -8,7 +8,7 @@ class CRM_Multiform_BAO_EntityForm extends CRM_Multiform_DAO_EntityForm {
    *
    * This function is invoked from within the web form layer and also from the api layer
    *
-   * @param array   $params      (reference ) an assoc array of name/value pairs
+   * @param array   $params an assoc array of name/value pairs
    *
    * @return object CRM_MultiForm_BAO_EntityForm
    * @access public

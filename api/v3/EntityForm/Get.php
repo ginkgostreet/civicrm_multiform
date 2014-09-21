@@ -9,8 +9,6 @@
  * @see http://wiki.civicrm.org/confluence/display/CRM/API+Architecture+Standards
  */
 function _civicrm_api3_entity_form_get_spec(&$spec) {
-  $params['parent_entity_id']['api.required'] = 1;
-  $params['entity_table']['api.required'] = 1;
 }
 
 /**

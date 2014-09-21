@@ -28,15 +28,17 @@
       <uniqueName>entity_form_entity_table</uniqueName>
       <title>EntityForm Entity Type</title>
       <type>varchar</type>
-      <length>64</length>    
+      <required>true</required>
+      <length>64</length>
       <comment>The Parent Entity table for entity_id</comment>
       <add>4.5</add>
   </field>
   <field>
       <name>entity_id</name>
-      <uniqueName>entity_form_parent_entity_id</uniqueName>
-      <title>EntityForm Parent Entity</title>
+      <uniqueName>entity_form_entity_id</uniqueName>
+      <title>EntityForm Entity ID</title>
       <type>int unsigned</type>
+      <required>true</required>
       <comment>The entity this form belongs to.</comment>
       <add>4.5</add>
   </field>
@@ -49,7 +51,7 @@
       <add>4.5</add>
   </field>
   <field>
-      <name>Header</name>
+      <name>header</name>
       <uniqueName>entity_form_header</uniqueName>
       <title>Header</title>
       <type>text</type>

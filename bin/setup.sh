@@ -37,3 +37,5 @@ mv ${CIVIROOT}/xml/schema/Schema.xml.backup ${CIVIROOT}/xml/schema/Schema.xml
 
 unlink ${CIVIROOT}/xml/schema/${EXTNAME}
 rm -rf ${CIVIROOT}/CRM/${EXTNAME}
+
+echo "Don't forget to check ${CIVIROOT}/sql/civicrm.mysql for changes."

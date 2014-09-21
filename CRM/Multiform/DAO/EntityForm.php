@@ -116,7 +116,7 @@ class CRM_Multiform_DAO_EntityForm extends CRM_Core_DAO
    *
    * @var text
    */
-  public $Header;
+  public $header;
   /**
    * HTML for display after profiles
    *
@@ -160,13 +160,15 @@ class CRM_Multiform_DAO_EntityForm extends CRM_Core_DAO
           'name' => 'entity_table',
           'type' => CRM_Utils_Type::T_STRING,
           'title' => ts('EntityForm Entity Type') ,
+          'required' => true,
           'maxlength' => 64,
           'size' => CRM_Utils_Type::BIG,
         ) ,
-        'entity_form_parent_entity_id' => array(
+        'entity_form_entity_id' => array(
           'name' => 'entity_id',
           'type' => CRM_Utils_Type::T_INT,
-          'title' => ts('EntityForm Parent Entity') ,
+          'title' => ts('EntityForm Entity ID') ,
+          'required' => true,
         ) ,
         'entity_form_title' => array(
           'name' => 'title',
@@ -176,7 +178,7 @@ class CRM_Multiform_DAO_EntityForm extends CRM_Core_DAO
           'size' => CRM_Utils_Type::HUGE,
         ) ,
         'entity_form_header' => array(
-          'name' => 'Header',
+          'name' => 'header',
           'type' => CRM_Utils_Type::T_TEXT,
           'title' => ts('Header') ,
         ) ,
@@ -207,9 +209,9 @@ class CRM_Multiform_DAO_EntityForm extends CRM_Core_DAO
       self::$_fieldKeys = array(
         'id' => 'entity_form_id',
         'entity_table' => 'entity_form_entity_table',
-        'entity_id' => 'entity_form_parent_entity_id',
+        'entity_id' => 'entity_form_entity_id',
         'title' => 'entity_form_title',
-        'Header' => 'entity_form_header',
+        'header' => 'entity_form_header',
         'footer' => 'footer',
         'options' => 'entity_form_options',
       );

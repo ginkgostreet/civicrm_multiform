@@ -9,8 +9,8 @@
  * @see http://wiki.civicrm.org/confluence/display/CRM/API+Architecture+Standards
  */
 function _civicrm_api3_entity_form_create_spec(&$spec) {
-  $params['entity_id']['api.required'] = 1;
-  $params['entity_table']['api.required'] = 1;
+  $spec['entity_id']['api.required'] = 1;
+  $spec['entity_table']['api.required'] = 1;
 }
 
 /**
@@ -25,4 +25,3 @@ function _civicrm_api3_entity_form_create_spec(&$spec) {
 function civicrm_api3_entity_form_create($params) {
   return _civicrm_api3_basic_create('CRM_Multiform_BAO_EntityForm', $params);
 }
-

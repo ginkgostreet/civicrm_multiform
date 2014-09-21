@@ -13,16 +13,15 @@ CREATE TABLE `civicrm_entity_form` (
 
 
      `id` int unsigned NOT NULL AUTO_INCREMENT  COMMENT 'Form Id',
-     `entity_table` varchar(64)    COMMENT 'The Parent Entity table for entity_id',
-     `entity_id` int unsigned    COMMENT 'The entity this form belongs to.',
+     `entity_table` varchar(64) NOT NULL   COMMENT 'The Parent Entity table for entity_id',
+     `entity_id` int unsigned NOT NULL   COMMENT 'The entity this form belongs to.',
      `title` varchar(192)    ,
-     `Header` text    COMMENT 'HTML for display before profiles',
+     `header` text    COMMENT 'HTML for display before profiles',
      `footer` text    COMMENT 'HTML for display after profiles',
-     `options` text    COMMENT 'Serialized PHP for non-generic settings' 
+     `options` text    COMMENT 'Serialized PHP for non-generic settings'
 ,
     PRIMARY KEY ( `id` )
- 
- 
- 
-)  ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci  ;
 
+
+
+)  ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci  ;
